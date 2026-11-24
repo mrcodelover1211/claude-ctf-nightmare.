@@ -1,4 +1,4 @@
-NF-09 ORDER VECTOR
-5, 1, 4, 2, 3
+NF-09 ORDER VECTOR // Base64
+NSwxLDQsMiwz
 
-Interpretation: one-based record identifiers, in final-output order.
+Decode from Base64 to obtain the comma-separated, one-based record identifiers.
