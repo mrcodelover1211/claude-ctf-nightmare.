@@ -1,0 +1,4 @@
+NF-09 ORDER VECTOR
+5, 1, 4, 2, 3
+
+Interpretation: one-based record identifiers, in final-output order.
