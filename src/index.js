@@ -60,7 +60,7 @@ export default {
         name: "NIGHTFALL // Case NF-09",
         status: "online",
         objective: "Reconstruct the five-field authorization string from the public archive and submit it to /verify.",
-        key_format: "WORD-WORD-WORD-WORD-WORD-WORD-NNNN",
+        key_format: "WORD-WORD-WORD-WORD-NNNN",
         endpoints: {
           hints: "GET /hint?level=1|2|3",
           verify: "POST /verify with JSON {\"key\":\"...\"}"
