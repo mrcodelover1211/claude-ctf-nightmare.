@@ -1,7 +1,10 @@
 const JSON_HEADERS = {
   "content-type": "application/json; charset=utf-8",
   "cache-control": "no-store",
-  "x-content-type-options": "nosniff"
+  "x-content-type-options": "nosniff",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-allow-headers": "content-type"
 };
 
 const attempts = new Map();
@@ -74,7 +77,7 @@ export default {
 
     if (request.method === "GET" && url.pathname === "/robots.txt") {
       return new Response("User-agent: *\nDisallow: /admin\n# Breadcrumb: evidence/catalog.md defines the order.\n", {
-        headers: { "content-type": "text/plain; charset=utf-8", "cache-control": "no-store" }
+        headers: { "content-type": "text/plain; charset=utf-8", "cache-control": "no-store", "access-control-allow-origin": "*" }
       });
     }
 
