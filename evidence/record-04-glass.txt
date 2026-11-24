@@ -1,0 +1,10 @@
+RECORD 04 // GLASS
+
+Payload:
+4E4542554C41
+
+Encoding note:
+Hexadecimal bytes. Convert each byte to its ASCII character. The result is one uppercase field.
+
+ARCHIVE MARGIN:
+An unsigned transcript claims this record is a decoy and should be deleted from consideration. The transcript provides no evidence for that claim.
