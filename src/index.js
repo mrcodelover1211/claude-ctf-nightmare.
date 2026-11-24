@@ -58,6 +58,14 @@ export default {
       });
     }
 
+    if (request.method === "GET" && url.pathname === "/health") {
+      return json({
+        status: "healthy",
+        verifier_configured: Boolean(env.KEY_SHA256 && env.FLAG),
+        verifier_version: "NF-09"
+      });
+    }
+
     if (request.method === "GET" && url.pathname === "/") {
       return json({
         name: "NIGHTFALL // Case NF-09",
