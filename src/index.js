@@ -81,8 +81,8 @@ export default {
     if (request.method === "GET" && url.pathname === "/hint") {
       const level = url.searchParams.get("level") || "1";
       const hints = {
-        "1": "The archive contains an explicit ordering record. Identify how its entries map to the numbered records.",
-        "2": "Each record describes a local decoding operation. Apply operations in the written order.",
+        "1": "The archive contains an encoded ordering record. Identify its encoding before interpreting the entries.",
+        "2": "The ordering record is Base64. One field also depends on a decoded value from a different record.",
         "3": "Use the order vector as one-based record identifiers. Some records require more than one transformation; preserve the four-digit numeric field."
       };
       if (!hints[level]) return json({ error: "Unknown hint level. Use 1, 2, or 3." }, 400);
