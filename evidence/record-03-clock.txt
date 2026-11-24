@@ -1,0 +1,12 @@
+RECORD 03 // CLOCK
+
+Observed display:
+9517
+
+Transform:
+A. Reverse the four digits.
+B. Subtract 3 from each digit, wrapping around modulo 10 if necessary.
+C. Preserve four positions, including any leading zero.
+
+ARCHIVE MARGIN:
+A handwritten note claims that the numeric field should be omitted. No supporting record is attached.
